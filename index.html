@@ -1,477 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>DevBee.com</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="welcome-enhancements.css">
-    <link rel="stylesheet" href="testimonial-section.css">
-    <link rel="stylesheet" href="portfolio-section.css">
-    
-    
-    
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/DevBee Logo Icon.png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DevBee - Frontend Developer Portfolio. showcasing skills in HTML, CSS, JavaScript, and React."
+    />
+    <meta property="og:title" content="DevBee Portfolio" />
+    <meta
+      property="og:description"
+      content="Frontend Developer specializing in responsive and interactive web experiences."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/testimonial-section.css" />
+    <link rel="stylesheet" href="styles/portfolio-section.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="container">
+      <nav>
+        <div class="container">
+          <span class="hamlogo">
+            <button
+              type="button"
+              class="menu-button"
+              id="menu-open-btn"
+              aria-label="Open Menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  fill="#cee7fe"
+                />
+              </svg>
+            </button>
 
-                <span class="hamlogo">
-                
-                    <a href="#" class="menu-button" onclick="showSidebar()">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="#cee7fe"/>
-                        </svg>
-                    </a>
+            <a href="index.html" class="logo">DevBee</a>
+          </span>
 
-                    <a href="index.html" class="logo">DevBee</a>
-                </span>
-           
-                <ul class="nav-links">
-                    <li class="hideOnMobile"><a href="#home">Home</a></li>
-                    <li class="hideOnMobile"><a href="#about">About</a></li>
-                    <li class="hideOnMobile"><a href="#skills">Skills</a></li>
-                    <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
-                    <li class="hideOnMobile"><a href="#testimonials">Testimonials</a></li>
-                    <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-                </ul>
+          <ul class="nav-links">
+            <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+            <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
+            <li class="hideOnMobile">
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+          </ul>
 
-                <div class="nav-social">
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                </div>
-
-                <div class="theme-switcher">
-                    <button id="themeToggle">
-                      <i class="fas fa-moon"></i>
-                    </button>
-                </div>
+          <div class="nav-social">
             
-            </div>
-            <ul class="sidebar" data-animation="slideRight">
-                <li onclick="hideSidebar()">
-                    <a id="hamburger" href="javascript:void(0)">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="#cee7fe"/>
-                        </svg>
-                    </a>
-                </li>
-                <a href="index.html" class="logo">DevBee</a>
-                <li class="sidebar-link"><a href="#home"><i class="fa fa-home" style="color: #cee7fe; margin-right: 5px;"></i>Home</a></li>
-                <li class="sidebar-link"><a href="#about"><i class="fa fa-user" style="color: #cee7fe; margin-right: 5px;"></i>About</a></li>
-                <li class="sidebar-link"><a href="#skills"><i class="fa fa-code" style="color: #cee7fe; margin-right: 5px;"></i>Skills</a></li>
-                <li class="sidebar-link"><a href="#portfolio"><i class="fa fa-briefcase" style="color: #cee7fe; margin-right: 5px;"></i>Portfolio</a></li>
-                <li class="sidebar-link"><a href="#testimonials"><i class="fa fa-comment" style="color: #cee7fe; margin-right: 5px;"></i>Testimonials</a></li>
-                <li class="sidebar-link"><a href="#contact"><i class="fa fa-envelope" style="color: #cee7fe; margin-right: 5px;"></i>Contact</a></li>
-            </ul>
-        </nav>
+            <a href="#" class="social-icon aria-label="X (formerly Twitter)"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" class="social-icon" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="social-icon" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="social-icon" aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+
+          <div class="theme-switcher">
+            <button id="themeToggle" aria-label="Toggle Dark Mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="sidebar" data-animation="slideRight">
+          <li class="sidebar-close-item">
+            <button
+              type="button"
+              id="menu-close-btn"
+              class="menu-button-close"
+              aria-label="Close Menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  fill="#cee7fe"
+                />
+              </svg>
+            </button>
+          </li>
+          <a href="index.html" class="logo">DevBee</a>
+          <li class="sidebar-link">
+            <a href="#home"
+              ><i
+                class="fa fa-home"
+                style="color: #cee7fe; margin-right: 5px"
+              ></i
+              >Home</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="#about"
+              ><i
+                class="fa fa-user"
+                style="color: #cee7fe; margin-right: 5px"
+              ></i
+              >About</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="#skills"
+              ><i
+                class="fa fa-code"
+                style="color: #cee7fe; margin-right: 5px"
+              ></i
+              >Skills</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="#portfolio"
+              ><i
+                class="fa fa-briefcase"
+                style="color: #cee7fe; margin-right: 5px"
+              ></i
+              >Portfolio</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="#testimonials"
+              ><i
+                class="fa fa-comment"
+                style="color: #cee7fe; margin-right: 5px"
+              ></i
+              >Testimonials</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="#contact"
+              ><i
+                class="fa fa-envelope"
+                style="color: #cee7fe; margin-right: 5px"
+              ></i
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main id="home">
+      <section class="hero">
+        <div class="particles">
+          <!-- Add 10-15 of these with different positions/sizes -->
+          <div class="particle" style="--size: 3px; --x: 10%; --y: 30%"></div>
+          <div class="particle" style="--size: 2px; --x: 80%; --y: 20%"></div>
+          <!-- Add more particles... -->
+        </div>
 
-        <section class="hero">
+        <div class="intro-text">
+          <h1 class="hello-text">
+            Hello, I'm
+            <span class="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </h1>
+          <p>
+            <marquee behavior="" direction=""
+              >Crafting user-friendly and visually appealing web
+              experiences.</marquee
+            >
+          </p>
 
-            <div class="particles">
-                <!-- Add 10-15 of these with different positions/sizes -->
-                <div class="particle" style="--size: 3px; --x: 10%; --y: 30%;"></div>
-                <div class="particle" style="--size: 2px; --x: 80%; --y: 20%;"></div>
-                <!-- Add more particles... -->
-              </div>
-            
-                          
-                <div class="intro-text">
-                  <h1 class="hello-text">Hello, I'm
-                    <span class="typed-text"></span>
-                    <span class="cursor">&nbsp;</span>
-                  </h1>
-                  <p>Crafting user-friendly and visually appealing web experiences.</p>
-                  
-                  <div class="tech-stack">
-                    <i class="fab fa-html5" data-tooltip="HTML5"></i>
-                    <i class="fab fa-css3-alt" data-tooltip="CSS3"></i>
-                    <i class="fab fa-js" data-tooltip="JavaScript"></i>
-                    <i class="fab fa-react" data-tooltip="React"></i>
-                    <!-- Add more icons -->
-                  </div>
-                  
-                  <div class="stats">
-                    <div class="stat">
-                      <span class="counter" data-target="12">0</span>
-                      <p>Projects Completed</p>
-                    </div>
-                  </div>
-                  
-                  <div class="cta-container">
-                    <a href="#portfolio" class="cta-button">See My Work</a>
-                  </div>
-                
-              </div>
-        </section>
+          <div class="tech-stack">
+            <i class="fab fa-html5" data-tooltip="HTML5"></i>
+            <i class="fab fa-css3-alt" data-tooltip="CSS3"></i>
+            <i class="fab fa-js" data-tooltip="JavaScript"></i>
+            <i class="fab fa-react" data-tooltip="React"></i>
+            <!-- Add more icons -->
+          </div>
 
-        <hr>
-
-         <!-- About Section  -->
-         <section id="about" class="about-section">
-            <div class="section-title" data-animation="slideUp">
-                <h2>About Me</h2>
-                <p>Learn more about me</p>
+          <div class="stats">
+            <div class="stat">
+              <span class="counter" data-target="12">0</span>
+              <p>Projects Completed</p>
             </div>
-            
-            <div class="about-container" data-animation="fadeIn">
+          </div>
 
-                <h3>Frontend Developer | Problem Solver | Digital Craftsman</h3>
-                <p class="about-text">
-                    I translate vision into reality through code. My journey from administrative professional to frontend developer has equipped me with exceptional attention to detail and a deep understanding of what makes digital experiences truly work.
-                </p>
-                <div class="about-img" data-animation="slideRight">
-                    <img src="images/profile.png" alt="DevBee Profile Picture" class="profile-picture">
-                </div>
-                
-                <div class="about-content" data-animation="slideLeft">
-                                       
-                    <div class="about-info">
-                        <div class="about-info-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <strong>Website:</strong> <span>walexsson.github.io/DevBee/</span>
-                        </div>
-                        <div class="about-info-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <strong>Phone:</strong> <span><a href="tel:+2348104202956">+234 810 420 2956</a></span>
-                        </div>
-                        <div class="about-info-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <strong>City:</strong> <span>Oyo, Nigeria</span>
-                        </div>
-                        <div class="about-info-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <strong>Email:</strong> <span><a href="mailto:walexsson@gmail.com">Walexson@gmail.com</a></span>
-                        </div>
-                        <div class="about-info-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <strong>Freelance:</strong> <span>Available</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Skills Section  -->
-        <section id="skills" class="skills-section">
-            <div class="section-title" data-animation="slideUp">
-                <h2>Skills</h2>
-                <p>My Technical Expertise</p>
-            </div>
-            
-            <div class="skills-container" data-animation="fadeIn">
-                <div class="skills-content" data-animation="fadeIn">
-                    <p>
-                        As a frontend developer, I specialize in creating responsive and interactive websites 
-                        that provide exceptional user experiences. Below are my key technical skills and proficiency levels.
-                    </p>
-                </div>
-                
-                <div class="skills-list" data-animation="slideUp">
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS</span>
-                            <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                            <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                            <span class="skill-percentage">50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <i class="fas fa-palette"></i>
-                            <span>Graphic Design</span>
-                            <span class="skill-percentage">55%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 55%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio-section">
-    <div class="portfolio-container">
+          <div class="cta-container">
+            <a href="#portfolio" class="cta-button">See My Work</a>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- About Section  -->
+      <section id="about" class="about-section">
         <div class="section-title" data-animation="slideUp">
+          <h2>About Me</h2>
+          <p>Learn more about me</p>
+        </div>
+
+        <div class="about-container" data-animation="fadeIn">
+          <h3>Frontend Developer | Problem Solver | Digital Craftsman</h3>
+          <p class="about-text">
+            I translate vision into reality through code. My journey from
+            administrative professional to frontend developer has equipped me
+            with exceptional attention to detail and a deep understanding of
+            what makes digital experiences truly work.
+          </p>
+          <div class="about-img" data-animation="slideRight">
+            <img
+              src="images/profile.png"
+              alt="DevBee Profile Picture"
+              class="profile-picture"
+            />
+          </div>
+
+          <div class="about-content" data-animation="slideLeft">
+            <div class="about-info">
+              <div class="about-info-item">
+                <i class="fas fa-chevron-right"></i>
+                <strong>Website:</strong>
+                <span>walexsson.github.io/DevBee/</span>
+              </div>
+              <div class="about-info-item">
+                <i class="fas fa-chevron-right"></i>
+                <strong>Phone:</strong>
+                <span
+                  ><a href="tel:+2348104202956" class="about-link"
+                    >+234 810 420 2956</a
+                  ></span
+                >
+              </div>
+              <div class="about-info-item">
+                <i class="fas fa-chevron-right"></i>
+                <strong>City:</strong> <span>Oyo, Nigeria</span>
+              </div>
+              <div class="about-info-item">
+                <i class="fas fa-chevron-right"></i>
+                <strong>Email:</strong>
+                <span
+                  ><a href="mailto:Walexson@gmail.com" class="about-link"
+                    >Walexson@gmail.com</a
+                  ></span
+                >
+              </div>
+              <div class="about-info-item">
+                <i class="fas fa-chevron-right"></i>
+                <strong>Freelance:</strong> <span>Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section  -->
+      <section id="skills" class="skills-section">
+        <div class="section-title" data-animation="slideUp">
+          <h2>Skills</h2>
+          <p>My Technical Expertise</p>
+        </div>
+
+        <div class="skills-container" data-animation="fadeIn">
+          <div class="skills-content" data-animation="fadeIn">
+            <p>
+              As a frontend developer, I specialize in creating responsive and
+              interactive websites that provide exceptional user experiences.
+              Below are my key technical skills and proficiency levels.
+            </p>
+          </div>
+
+          <div class="skills-list" data-animation="slideUp">
+            <div class="skill-item">
+              <div class="skill-name">
+                <i class="fab fa-html5"></i>
+                <span>HTML</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS</span>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+                <span class="skill-percentage">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+                <span class="skill-percentage">50%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <i class="fas fa-palette"></i>
+                <span>Graphic Design</span>
+                <span class="skill-percentage">55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 55%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+          <div class="section-title" data-animation="slideUp">
             <h2>Portfolio</h2>
             <p>My Recent Work</p>
-        </div>
+          </div>
 
-        <div class="portfolio-carousel swiper" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="portfolio-carousel swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="portfolio-item" data-animation="fadeIn">
-                        <div class="portfolio-img-container">
-                            <a href="calculator/calculator.html" target="_blank">
-                                <img src="images/DevBee Calculator.png" alt="DevBee Calculator">
-                                <div class="project-overlay">
-                                    <div class="project-description">
-                                        <h3>DevBee Calculator</h3>
-                                        <p class="project-description-text">A responsive web calculator that performs basic arithmetic operations with a clean, intuitive interface.</p>
-                                    </div>
-                                </div>
-                            </a>
+              <div class="swiper-slide">
+                <div class="portfolio-item" data-animation="fadeIn">
+                  <div class="portfolio-img-container">
+                    <a href="projects/roman%20converter/roman-converter.html" target="_self">
+                      <img
+                        class="project-img"
+                        src="images/DevBee Roman Converter.png"
+                        alt="DevBee Roman Converter"
+                      />
+                      <div class="project-overlay">
+                        <div class="project-description">
+                          <h3>DevBee Roman Converter</h3>
+                          <p class="project-description-text">
+                            A responsive tool to convert between Arabic numbers and Roman numerals with history tracking.
+                          </p>
                         </div>
-                    </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-item" data-animation="fadeIn">
+                  <div class="portfolio-img-container">
+                    <a href="calculator/calculator.html" target="_parent">
+                      <img
+                        class="project-img"
+                        src="images/DevBee Calculator.png"
+                        alt="DevBee Calculator"
+                      />
+                      <div class="project-overlay">
+                        <div class="project-description">
+                          <h3>DevBee Calculator</h3>
+                          <p class="project-description-text">
+                            A responsive web calculator that performs basic
+                            arithmetic operations with a clean, intuitive
+                            interface.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-                <div class="swiper-slide">
-                    <div class="portfolio-item" data-animation="fadeIn">
-                        <div class="portfolio-img-container">
-                            <a href="counter/CounterApp.html" target="_blank">
-                                <img src="images/DevBee CounterApp.png" alt="DevBee Counter App">
-                                <div class="project-overlay">
-                                    <div class="project-description">
-                                        <h3>DevBee Counter App</h3>
-                                        <p class="project-description-text">A simple interactive counter tool built to increment, decrement, and reset values—ideal for learning state management.</p>
-                                    </div>
-                                </div>
-                            </a>
+              <div class="swiper-slide">
+                <div class="portfolio-item" data-animation="fadeIn">
+                  <div class="portfolio-img-container">
+                    <a href="counter/CounterApp.html" target="_top">
+                      <img
+                        class="project-img"
+                        src="images/DevBee CounterApp.png"
+                        alt="DevBee Counter App"
+                      />
+                      <div class="project-overlay">
+                        <div class="project-description">
+                          <h3>DevBee Counter App</h3>
+                          <p class="project-description-text">
+                            A simple interactive counter tool built to
+                            increment, decrement, and reset values—ideal for
+                            learning state management.
+                          </p>
                         </div>
-                    </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                    
-                <div class="swiper-slide">
-                    <div class="portfolio-item" data-animation="fadeIn">
-                        <div class="portfolio-img-container">
-                            <a href="palindrome/Palindrome Checker.html" target="_blank">
-                                <img src="images/DevBee Palindrome Checker.png" alt="DevBee Palindrome Checker">
-                                <div class="project-overlay">
-                                    <div class="project-description">
-                                        <h3>DevBee Palindrome Checker</h3>
-                                        <p class="project-description-text">A lightweight utility that checks if a given string reads the same forward and backward, built with input validation.</p>
-                                    </div>
-                                </div>
-                            </a>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="portfolio-item" data-animation="fadeIn">
+                  <div class="portfolio-img-container">
+                    <a href="palindrome/Palindrome Checker.html" target="_self">
+                      <img
+                        class="project-img"
+                        src="images/DevBee Palindrome Checker.png"
+                        alt="DevBee Palindrome Checker"
+                      />
+                      <div class="project-overlay">
+                        <div class="project-description">
+                          <h3>DevBee Palindrome Checker</h3>
+                          <p class="project-description-text">
+                            A lightweight utility that checks if a given string
+                            reads the same forward and backward, built with
+                            input validation.
+                          </p>
                         </div>
-                    </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-item" data-animation="fadeIn">
+                  <div class="portfolio-img-container">
+                    <a href="https://walexsson.github.io/fss-oyo/#" target="_blank">
+                      <img
+                        class="project-img"
+                        src="images/fss-oyo.png"
+                        alt="Federal School of Surveying, Oyo"
+                      />
+                      <div class="project-overlay">
+                        <div class="project-description">
+                          <h3>Federal School of Surveying, Oyo</h3>
+                          <p class="project-description-text">
+                            A responsive landing page for FSS Oyo, featuring academic programs, admissions info, and event updates.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="swiper-pagination"></div>
+          </div>
         </div>
-        
-       
-    </div>
-</section>
+      </section>
 
-       
-        <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-       
-    <div class="testimonials-container">
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="testimonials-container">
+          <div class="section-title" data-animation="slideUp">
+            <h2>Testimonials</h2>
+            <p>
+              Here are some thoughts from clients and collaborators I've worked
+              with over the years. Their feedback has been invaluable in helping
+              me grow as a professional.
+            </p>
+          </div>
 
-      <div class="section-title" data-animation="slideUp">
-        <h2>Testimonials</h2>
-        <p>Here are some thoughts from clients and collaborators I've worked with over the years. Their feedback has been invaluable in helping me grow as a professional.</p>
-      </div>
-
-        <div class="testimonials-carousel swiper" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="testimonials-carousel swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
+              <div class="swiper-slide">
                 <div class="testimonial-item">
-                <p>
+                  <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    I am extremely impressed with their work. The attention to detail and creative solutions provided exceeded our expectations and truly elevated our project.
+                    I am extremely impressed with their work. The attention to
+                    detail and creative solutions provided exceeded our
+                    expectations and truly elevated our project.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="images/pic01.jpg" class="testimonial-img" alt="placeholder">
-                <h3>Olajumoke Kehinde</h3>
-                <h4>CEO, Glow Skin Care</h4>
+                  </p>
+                  <img
+                    src="images/pic01.jpg"
+                    class="testimonial-img"
+                    alt="placeholder"
+                  />
+                  <h3>Olajumoke Kehinde</h3>
+                  <h4>CEO, Glow Skin Care</h4>
                 </div>
-            </div>
+              </div>
 
-            <div class="swiper-slide">
+              <div class="swiper-slide">
                 <div class="testimonial-item">
-                <p>
+                  <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Working with them was a pleasure. Their technical expertise combined with excellent communication skills made the entire development process smooth and efficient.
+                    Working with them was a pleasure. Their technical expertise
+                    combined with excellent communication skills made the entire
+                    development process smooth and efficient.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="images/pic03.jpg" class="testimonial-img" alt="placeholder">
-                <h3>Ibrahim Olawale</h3>
-                <h4>Owner, DevBee Tech.</h4>
+                  </p>
+                  <img
+                    src="images/pic03.jpg"
+                    class="testimonial-img"
+                    alt="placeholder"
+                  />
+                  <h3>Ibrahim Olawale</h3>
+                  <h4>Owner, DevBee Tech.</h4>
                 </div>
-            </div>
+              </div>
 
-            <div class="swiper-slide">
+              <div class="swiper-slide">
                 <div class="testimonial-item">
-                <p>
+                  <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    An exceptional developer who delivers quality work consistently. They have a knack for understanding requirements and translating them into elegant, functional solutions.
+                    An exceptional developer who delivers quality work
+                    consistently. They have a knack for understanding
+                    requirements and translating them into elegant, functional
+                    solutions.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="images/pic04.jpg" class="testimonial-img" alt="placeholder">
-                <h3>Adesewa Maryam</h3>
-                <h4>Director, Amat Skin Care</h4>
+                  </p>
+                  <img
+                    src="images/pic04.jpg"
+                    class="testimonial-img"
+                    alt="placeholder"
+                  />
+                  <h3>Adesewa Maryam</h3>
+                  <h4>Director, Amat Skin Care</h4>
                 </div>
-            </div>
+              </div>
 
-            <div class="swiper-slide">
+              <div class="swiper-slide">
                 <div class="testimonial-item">
-                <p>
+                  <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    The website they built for us has significantly improved our online presence and user engagement. Their expertise in frontend development is truly remarkable.
+                    The website they built for us has significantly improved our
+                    online presence and user engagement. Their expertise in
+                    frontend development is truly remarkable.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="images/pic.jpeg" class="testimonial-img" alt="placeholder">
-                <h3>Anonymous</h3>
-                <h4>No_Position, BlueCo</h4>
+                  </p>
+                  <img
+                    src="images/pic.jpeg"
+                    class="testimonial-img"
+                    alt="placeholder"
+                  />
+                  <h3>Anonymous</h3>
+                  <h4>No_Position, BlueCo</h4>
                 </div>
-            </div>
+              </div>
 
-            <div class="swiper-slide">
+              <div class="swiper-slide">
                 <div class="testimonial-item">
-                <p>
+                  <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Not only did they deliver a stunning website, but they also provided valuable insights on improving user experience and site performance. A true professional who goes above and beyond.
+                    Not only did they deliver a stunning website, but they also
+                    provided valuable insights on improving user experience and
+                    site performance. A true professional who goes above and
+                    beyond.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="images/pic02.jpg" class="testimonial-img" alt="placeholder">
-                <h3>Badirat Taiwo</h3>
-                <h4>E-commerce Manager, StyleShop</h4>
+                  </p>
+                  <img
+                    src="images/pic02.jpg"
+                    class="testimonial-img"
+                    alt="placeholder"
+                  />
+                  <h3>Badirat Taiwo</h3>
+                  <h4>E-commerce Manager, StyleShop</h4>
                 </div>
-            </div>
-
+              </div>
             </div>
             <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- Updated Contact Section (iPortfolio style) -->
+      <section id="contact" class="contact-section">
+        <div class="section-title" data-animation="slideUp">
+          <h2>Contact</h2>
+          <p>Get In Touch With Me</p>
         </div>
 
-        </div>
-  </section><!-- End Testimonials Section -->
+        <div class="contact-container">
+          <div class="contact-info" data-animation="slideRight">
+            <div class="contact-address">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location:</h3>
+                <p>Oyo, Nigeria</p>
+              </div>
+            </div>
 
-        
-        <!-- Updated Contact Section (iPortfolio style) -->
-        <section id="contact" class="contact-section">
-            <div class="section-title" data-animation="slideUp">
-                <h2>Contact</h2>
-                <p>Get In Touch With Me</p>
+            <div class="contact-email">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email:</h3>
+                <p>contact@devbee.com</p>
+              </div>
             </div>
-            
-            <div class="contact-container">
-                <div class="contact-info" data-animation="slideRight">
-                    <div class="contact-address">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location:</h3>
-                            <p>Oyo, Nigeria</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-email">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email:</h3>
-                            <p><a href="mailto:walexsson@gmail.com">Walexson@gmail.com</a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-phone">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h3>Call:</h3>
-                            <p><a href="tel:+2348104202956">+234 810 420 2956</a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-social">
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                
-                <div class="contact-form" data-animation="slideLeft">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="contact-button">Send Message</button>
-                        </div>
-                    </form>
-                </div>
+
+            <div class="contact-phone">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h3>Call:</h3>
+                <p>
+                  <a href="tel:+234814202956" class="about-link">+234 81 420 2956</a>
+                </p>
+              </div>
             </div>
-        </section>
+
+            <div class="contact-social">
+              <a href="#" class="social-icon" 
+              aria-label="X (formerly Twitter)"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form" data-animation="slideLeft">
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="6"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="contact-button">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    
-        
+
     <footer>
-        <div class="footer-social">
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="all-rights-reserved">
-            <p>© DevBee All rights reserved. 2025</p>
-        </div>
+      
+      <div class="all-rights-reserved">
+        <p>© DevBee All rights reserved. 2025</p>
+      </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="repeatable-animations.js"></script>
-    <script src="welcome-animations.js"></script>
-    <script src="testimonial-section.js"></script>
-    <script src="portfolio-section.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+    <script src="js/repeatable-animations.js"></script>
+    <script src="js/welcome-animations.js"></script>
+    <script src="js/testimonial-section.js"></script>
+    <script src="js/portfolio-section.js"></script>
+  </body>
 </html>
-

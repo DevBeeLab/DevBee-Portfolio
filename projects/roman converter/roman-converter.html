@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" href="roman-converter.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>
+        <a href="../../index.html" class="logo">DevBee</a> Roman Converter
+      </h1>
+      <p>A utility for converting between Arabic numbers and Roman numerals.</p>
+    </header>
+
+    <div class="container">
+      <div class="converter-header">
+        <h2>Converter</h2>
+        <button class="help-button" id="helpButton" title="Help">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="help-panel" id="helpPanel">
+        <h3>How to use:</h3>
+        <ul>
+          <li>
+            Auto-detect mode automatically determines if you enter a number or
+            Roman numeral
+          </li>
+          <li>
+            Manual mode lets you explicitly choose which conversion direction to
+            use
+          </li>
+          <li>
+            Valid Roman numerals: I (1), V (5), X (10), L (50), C (100), D
+            (500), M (1000)
+          </li>
+          <li>Numbers must be between 1 and 3999</li>
+          <li>Your last 10 conversions are saved locally</li>
+          <li>Click on any history item to load it back</li>
+        </ul>
+      </div>
+
+      <div class="converter-panel">
+        <div class="mode-buttons">
+          <div class="direction-buttons">
+            <button id="toRomanButton" class="button active">
+              Number → Roman
+            </button>
+            <button id="toNumberButton" class="button inactive">
+              Roman → Number
+            </button>
+          </div>
+          <div>
+            <button id="autoDetectButton" class="button auto-detect inactive">
+              Auto-detect
+            </button>
+          </div>
+        </div>
+
+        <div class="input-section">
+          <label id="inputLabel" class="input-label"
+            >Enter a number (1-3999):</label
+          >
+          <div class="input-wrapper">
+            <input
+              id="inputField"
+              class="input-field"
+              type="number"
+              placeholder="1-3999"
+              min="1"
+              max="3999"
+            />
+            <button id="convertButton" class="convert-button">Convert</button>
+          </div>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <div id="resultSection" class="result-section">
+          <div class="result-header">
+            <h2 id="resultLabel" class="result-label">Roman numeral:</h2>
+            <button
+              id="copyButton"
+              class="copy-button"
+              title="Copy to clipboard"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div id="resultDisplay" class="result-display"></div>
+        </div>
+      </div>
+
+      <div class="reference-panel">
+        <h3 class="reference-title">Quick Reference:</h3>
+        <div class="reference-grid">
+          <div>I = 1</div>
+          <div>V = 5</div>
+          <div>X = 10</div>
+          <div>L = 50</div>
+          <div>C = 100</div>
+          <div>D = 500</div>
+          <div>M = 1000</div>
+        </div>
+      </div>
+
+      <div id="historySection" class="history-section">
+        <div class="history-header">
+          <h2 class="history-title">Conversion History</h2>
+          <button id="clearHistoryButton" class="clear-history-button">
+            Clear History
+          </button>
+        </div>
+
+        <div id="historyList" class="history-list">
+          <!-- History items will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Created by DevBee
+        <a class="view-my-p" href="../../index.html">View My Portfolio</a>
+      </p>
+    </footer>
+
+    <script src="roman-converter.js"></script>
+  </body>
+</html>

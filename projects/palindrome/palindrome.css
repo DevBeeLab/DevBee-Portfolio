@@ -1,0 +1,153 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(100deg, #001214, #001f29);;
+    display: grid;
+   place-items: center;
+   min-height: 70vh;
+}
+
+.main{
+   background-color: #01394c;
+   width: 500px;
+   min-height: 200px;
+   display: grid;
+   place-items: center;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+   padding: 15px;
+}
+
+/* Header Styling */
+.header {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ .logo{
+   margin: 10px;
+   color: #ffdfdb;
+   font-size: 25px;
+   text-decoration: none;
+   font-weight: bolder;
+   border: 2px solid #ffdfdb;
+   border-radius: 20px;
+   padding: 7px;
+   transition: all 1s ease ;
+   -webkit-transition: all 1s ease ;
+   -moz-transition: all 1s ease ;
+   -ms-transition: all 1s ease ;
+   -o-transition: all 1s ease ;
+}
+
+.logo:hover{   
+       background-color:#ffdfdb ;
+       color: rgb(0, 0, 0) ;
+       border: none;
+       padding: 9px;
+       box-shadow:0 0 10px white;
+      }
+ 
+      .header h1 {
+       font-size: rem;
+       color: #ffdfdb;
+   }
+   
+   .header p {
+       font-size: 1rem;
+       color: white;
+   }
+ 
+   .description-text{
+      color: white;
+      text-align: center;
+   }
+
+.checker{
+   background-color: azure;
+   width: 360px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   text-align: center;
+   margin: 10px;
+}
+
+#text-input{
+   border: none;
+   border-bottom: 2px solid rgb(16, 65, 65);
+   background-color: azure;
+
+}
+
+#check-btn{
+   background-color: rgb(16, 65, 65);
+   color:azure;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+.header{
+   font-weight: bolder;
+   font-size: larger;
+   color: azure;
+}
+
+.definition-of-palindrome{
+   background-image: linear-gradient(100deg, #575656, #062e3f);;
+   color:rgb(245, 237, 17);
+   width: 360px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   padding: 15px;
+   margin: 20px;
+   text-align: justify;
+}
+button:hover{
+   box-shadow: 0 0 10px black;
+}
+
+/* Footer Styling */
+.footer {
+   margin-top: 20px;
+   text-align: center;
+   font-size: 0.9rem;
+   color: rgb(199, 199, 244);
+ }
+ 
+ .view-my-p{
+   position: relative;
+   color: #ffdfdb;
+   text-decoration: none;
+   
+}
+
+.view-my-p::after{
+   content: "";
+   position: absolute;
+   width: 0;
+   background-color: #ffdfdb;
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   transition: width 1s ease;
+   -webkit-transition: width 1s ease;
+   -moz-transition: width 1s ease;
+   -ms-transition: width 1s ease;
+   -o-transition: width 1s ease;
+}
+
+
+.view-my-p:hover::after{
+   width: 100%;
+}
+

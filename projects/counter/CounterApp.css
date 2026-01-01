@@ -1,0 +1,214 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(100deg, #575656, #062e3f);
+    color: #ffdfdb;
+    transition: 0.3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+  
+  /* Header Styling */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo{
+    margin: 10px;
+    color: #ffdfdb;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bolder;
+    border: 2px solid #ffdfdb;
+    border-radius: 20px;
+    padding: 7px;
+    transition: all 1s ease ;
+    -webkit-transition: all 1s ease ;
+    -moz-transition: all 1s ease ;
+    -ms-transition: all 1s ease ;
+    -o-transition: all 1s ease ;
+}
+
+.logo:hover{   
+        background-color:#ffdfdb ;
+        color: rgb(0, 0, 0) ;
+        border: none;
+        padding: 9px;
+        box-shadow:0 0 10px white;
+       }
+  
+       .header h1 {
+        font-size: 2rem;
+        color: #ffdfdb;
+    }
+    
+    .header p {
+        font-size: 1rem;
+        color: white;
+    }
+  
+  /* Counter Container Styling */
+  .counter-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    /*-webkit-border-radius:;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+     */
+    -webkit-border-radius: 10px;
+}
+  
+  .counter-display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2980b9;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:; */
+    /*-webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+     */
+}
+  
+  #decrement-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  #reset-btn {
+    background-color: #f1c40f;
+    color: white;
+  }
+  
+  #increment-btn {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  .view-my-p{
+    position: relative;
+    color: #ffdfdb;
+    text-decoration: none;
+    
+}
+
+.view-my-p::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: #ffdfdb;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
+}
+
+
+.view-my-p:hover::after{
+    width: 100%;
+}
+ 
+  /* Save Styling */
+  .save-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .save-section .save-count {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #2980b9;
+    /* -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:; */
+}
+  
+  .save-section button {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /*-webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    */-webkit-transition: background-color 0.3s ease;
+    /* -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+    -webkit-transition:; */
+}
+  
+  .save-section button:hover {
+    background-color: #2980b9;
+  }
+  button:hover{
+    box-shadow: 0 0 10px black;
+  }

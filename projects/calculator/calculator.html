@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBee Calculator App</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <header class="header">
+        <h1><a href="index.html" class="logo">DevBee</a> Calculator </h1>
+        <p>A simple calculator application built with HTML, CSS, and JavaScript.</p>
+      </header>
+    
+    <div class="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+        <button class="operator" onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button class="operator" onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button class="operator" onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button class="operator" onclick="appendToDisplay('/')">/</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button class="operator" onclick="calculate()">=</button>
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button onclick="appendToDisplay('(')">(</button>
+        <button onclick="appendToDisplay(')')">)</button>
+        <button class="delete" onclick="deleteLast()">⌫</button>
+
+      </div>
+    </div>
+
+     <!-- Footer -->
+  <footer class="footer">
+    <p>Created by DevBee <a class="view-my-p" href="https://walexsson.github.io/DevBee/">View My Portfolio</a></p>
+  </footer>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
