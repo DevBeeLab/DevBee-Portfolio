@@ -165,9 +165,9 @@ body.dark-mode .container {
 }
 
 .logo-img {
-  height: 50px;
+  height: 30px;
   transition: transform 0.5s ease;
-  margin: 10px;
+  margin: 20px;
   -webkit-transition: transform 0.5s ease;
   -moz-transition: transform 0.5s ease;
   -ms-transition: transform 0.5s ease;
@@ -1164,7 +1164,7 @@ body.dark-mode footer {
 }
 
 #themeToggle {
-  background: var(--blue8);
+  background: var(--blue5);
   border: none;
   width: 40px;
   height: 40px;
@@ -1173,13 +1173,15 @@ body.dark-mode footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--blue12);
   transition: all 0.3s ease;
 }
 
 #themeToggle:hover {
-  background: var(--blue5);
-  color: white;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 /* 10. Animated Background Pattern */
