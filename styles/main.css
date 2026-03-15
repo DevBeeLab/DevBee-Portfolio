@@ -148,6 +148,12 @@ nav {
   -o-transform: translateY(-5px);
 }
 
+@media screen and (max-width: 465px) {
+  .nav-social {
+    display: none;
+  }
+}
+
 .container {
   width: 100vw;
   padding-left: 15px;
