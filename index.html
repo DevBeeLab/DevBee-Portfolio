@@ -5,7 +5,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="images/DevBee Logo.png"
+      href="assets/DevBee Logo.png"
       sizes="32x32"
     />
     <link
@@ -25,8 +25,6 @@
     />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/testimonial-section.css" />
-    <link rel="stylesheet" href="styles/portfolio-section.css" />
   </head>
   <body>
     <header>
@@ -54,7 +52,7 @@
 
             <a href="index.html">
               <img
-                src="images/DevBee Logo 1.png"
+                src="assets/DevBee Logo 1.png"
                 alt="DevBee Logo"
                 class="logo-img"
               />
@@ -89,12 +87,13 @@
               ><i class="fab fa-github"></i
             ></a>
           </div>
-
-          <div class="theme-switcher">
-            <button id="themeToggle" aria-label="Toggle Dark Mode">
-              <i class="fas fa-moon"></i>
-            </button>
-          </div>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark/light mode"
+          >
+            <i class="fas fa-moon" style="color: var(--blue4)"></i>
+          </button>
         </div>
         <ul class="sidebar" data-animation="slideRight">
           <li class="sidebar-close-item">
@@ -119,7 +118,7 @@
           </li>
           <a href="index.html">
             <img
-              src="images/DevBee Logo 1.png"
+              src="assets/DevBee Logo 1.png"
               alt="DevBee Logo"
               class="logo-img"
             />
@@ -242,7 +241,7 @@
           </p>
           <div class="about-img" data-animation="slideRight">
             <img
-              src="images/profile.png"
+              src="assets/profile.png"
               alt="DevBee Profile Picture"
               class="profile-picture"
             />
@@ -384,7 +383,7 @@
                     >
                       <img
                         class="project-img"
-                        src="images/DevBee Roman Converter.png"
+                        src="assets/DevBee Roman Converter.png"
                         alt="DevBee Roman Converter"
                       />
                       <div class="project-overlay">
@@ -409,7 +408,7 @@
                     >
                       <img
                         class="project-img"
-                        src="images/DevBee Calculator.png"
+                        src="assets/DevBee Calculator.png"
                         alt="DevBee Calculator"
                       />
                       <div class="project-overlay">
@@ -433,7 +432,7 @@
                     <a href="projects/counter/CounterApp.html" target="_self">
                       <img
                         class="project-img"
-                        src="images/DevBee CounterApp.png"
+                        src="assets/DevBee CounterApp.png"
                         alt="DevBee Counter App"
                       />
                       <div class="project-overlay">
@@ -460,7 +459,7 @@
                     >
                       <img
                         class="project-img"
-                        src="images/DevBee Palindrome Checker.png"
+                        src="assets/DevBee Palindrome Checker.png"
                         alt="DevBee Palindrome Checker"
                       />
                       <div class="project-overlay">
@@ -486,7 +485,7 @@
                     >
                       <img
                         class="project-img"
-                        src="images/fss-oyo.png"
+                        src="assets/fss-oyo.png"
                         alt="Federal School of Surveying, Oyo"
                       />
                       <div class="project-overlay">
@@ -537,7 +536,7 @@
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img
-                    src="images/pic01.jpg"
+                    src="assets/pic01.jpg"
                     class="testimonial-img"
                     alt="placeholder"
                   />
@@ -556,7 +555,7 @@
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img
-                    src="images/pic03.jpg"
+                    src="assets/pic03.jpg"
                     class="testimonial-img"
                     alt="placeholder"
                   />
@@ -576,7 +575,7 @@
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img
-                    src="images/pic04.jpg"
+                    src="assets/pic04.jpg"
                     class="testimonial-img"
                     alt="placeholder"
                   />
@@ -595,7 +594,7 @@
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img
-                    src="images/pic.jpeg"
+                    src="assets/pic.jpeg"
                     class="testimonial-img"
                     alt="placeholder"
                   />
@@ -615,7 +614,7 @@
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img
-                    src="images/pic02.jpg"
+                    src="assets/pic02.jpg"
                     class="testimonial-img"
                     alt="placeholder"
                   />
@@ -743,10 +742,6 @@
         <p>© DevBee All rights reserved. 2025</p>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/repeatable-animations.js"></script>
-    <script src="js/welcome-animations.js"></script>
-    <script src="js/testimonial-section.js"></script>
-    <script src="js/portfolio-section.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
