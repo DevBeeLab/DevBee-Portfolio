@@ -60,7 +60,6 @@ Then open `index.html` in your browser — no build step required.
 
 ## Contact
 
-- **Email:** contact@devbee.com
 - **Phone:** +234 810 420 2956
 - **Location:** Oyo, Nigeria
 - **Freelance:** Available
