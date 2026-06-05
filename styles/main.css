@@ -568,6 +568,7 @@ body.dark-mode .about-container h3 {
 .about-text {
   font-size: 16px;
   margin-bottom: 20px;
+   text-align: justify;
 }
 
 .about-info {
