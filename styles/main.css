@@ -562,7 +562,7 @@ body.dark-mode .about-section {
   font-size: 26px;
   color: var(--blue11);
   margin-bottom: 20px;
-   text-align: center;
+  text-align: center !important;
 }
 
 color: var(--blue9);
@@ -571,7 +571,7 @@ color: var(--blue9);
 .about-text {
   font-size: 16px;
   margin-bottom: 20px;
-   text-align: justify;
+  text-align: justify;
 }
 
 .about-info {
