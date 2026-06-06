@@ -557,11 +557,15 @@ body.dark-mode .about-section {
   justify-content: center;
 }
 
-.about-container h3 {
+.about-container {
   font-weight: 700;
   font-size: 26px;
   color: var(--blue11);
   margin-bottom: 20px;
+}
+
+.about-container h3 {
+   text-align: center
 }
 
 body.dark-mode .about-container h3 {
