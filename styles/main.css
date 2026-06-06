@@ -519,7 +519,7 @@ body.dark-mode .about-section {
   padding: 0 20px;
   align-items: center;
 }
-.about-container {
+.about-container h3 {
    text-align: center;
 }
 
