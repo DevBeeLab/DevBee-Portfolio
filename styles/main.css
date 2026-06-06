@@ -557,7 +557,7 @@ body.dark-mode .about-section {
   justify-content: center;
 }
 
-.section-container h3 {
+.section-title h3 {
   font-weight: 700;
   font-size: 26px;
   color: var(--blue11);
