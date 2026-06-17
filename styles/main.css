@@ -519,6 +519,13 @@ body.dark-mode .about-section {
   padding: 0 20px;
   align-items: center;
 }
+
+.about-container p, .skills-content p{
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
 .about-container h3 {
    text-align: center;
 }
@@ -565,15 +572,9 @@ body.dark-mode .about-section {
   margin-top: 20px;
   text-align: center !important;
 }
-
-color: var(--blue9);
-}
-
-.about-text {
-  font-size: 16px;
-  margin-bottom: 20px;
-  text-align: justify;
-}
+body.dark-mode .section-title h3 {
+  color: var(--blue9);
+} 
 
 .about-info {
   display: grid;
