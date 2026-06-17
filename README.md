@@ -8,7 +8,7 @@ A personal portfolio website showcasing my work as a frontend developer — buil
 
 ## About
 
-Hi, I'm DevBee — a frontend developer based in Oyo, Nigeria. I specialize in building responsive and interactive web experiences. This portfolio highlights my skills, featured projects, and client testimonials.
+Hi, I'm DevBee — a full-stack developer based in Oyo, Nigeria. I specialize in building responsive and interactive web experiences. This portfolio highlights my skills, featured projects, and client testimonials.
 
 ---
 
@@ -25,14 +25,14 @@ Hi, I'm DevBee — a frontend developer based in Oyo, Nigeria. I specialize in b
 
 ## Projects Featured
 
-| Project | Description |
-|---|---|
-| [Checkam](https://devbee-checkam.onrender.com/) | Personal finance tracker for Nigerian users — built with Django |
-| [Roman Converter](projects/roman%20converter/roman-converter.html) | Converts between Arabic numbers and Roman numerals with history tracking |
-| [Calculator](projects/calculator/calculator.html) | Basic arithmetic calculator with a clean UI |
-| [Counter App](projects/counter/CounterApp.html) | Increment, decrement, and reset counter tool |
-| [Palindrome Checker](projects/palindrome/Palindrome%20Checker.html) | Checks if a string reads the same forward and backward |
-| [FSS Oyo Redesign](https://DevBeeLab.github.io/fss-oyo-redesign/) | Responsive landing page for Federal School of Surveying, Oyo |
+| Project                                                             | Description                                                              |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Checkam](https://devbee-checkam.onrender.com/)                     | Personal finance tracker for Nigerian users — built with Django          |
+| [Roman Converter](projects/roman%20converter/roman-converter.html)  | Converts between Arabic numbers and Roman numerals with history tracking |
+| [Calculator](projects/calculator/calculator.html)                   | Basic arithmetic calculator with a clean UI                              |
+| [Counter App](projects/counter/CounterApp.html)                     | Increment, decrement, and reset counter tool                             |
+| [Palindrome Checker](projects/palindrome/Palindrome%20Checker.html) | Checks if a string reads the same forward and backward                   |
+| [FSS Oyo Redesign](https://DevBeeLab.github.io/fss-oyo-redesign/)   | Responsive landing page for Federal School of Surveying, Oyo             |
 
 ---
 

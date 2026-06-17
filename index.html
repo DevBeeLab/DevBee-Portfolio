@@ -24,6 +24,21 @@
       content="Frontend Developer specializing in responsive and interactive web experiences."
     />
     <meta property="og:type" content="website" />
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://devbeelab.vercel.app/" />
+
+    <!-- Open Graph image (use your profile pic or a portfolio screenshot) -->
+    <meta
+      property="og:image"
+      content="https://devbeelab.vercel.app/assets/profile.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://devbeelab.vercel.app/" />
+
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
@@ -80,10 +95,17 @@
             <a href="#" class="social-icon" aria-label="Instagram"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a href="https://www.linkedin.com/in/ganiyu-ibrahim-99a439bb" target="_blank" class="social-icon" aria-label="LinkedIn"
+            <a
+              href="https://www.linkedin.com/in/ganiyu-ibrahim-99a439bb"
+              target="_blank"
+              class="social-icon"
+              aria-label="LinkedIn"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://github.com/DevBeeLab" class="social-icon" aria-label="GitHub"
+            <a
+              href="https://github.com/DevBeeLab"
+              class="social-icon"
+              aria-label="GitHub"
               ><i class="fab fa-github"></i
             ></a>
           </div>
@@ -235,13 +257,14 @@
 
         <div class="about-container" data-animation="fadeIn">
           <p class="about-text">
-            I'm a developer based in Oyo, Nigeria, building real-world web applications
-  with HTML, CSS, JavaScript, Django, and Git. I hold FreeCodeCamp
-  certifications in Responsive Web Design and JavaScript Algorithms & Data
-  Structures, and my projects range from utility tools and landing page
-  redesigns to Checkam — a full-stack personal finance tracker built for
-  Nigerian users. I'm available for freelance work and actively growing toward
-  a full-time software development role.
+            I'm a developer based in Oyo, Nigeria, building real-world web
+            applications with HTML, CSS, JavaScript, Django, and Git. I hold
+            FreeCodeCamp certifications in Responsive Web Design and JavaScript
+            Algorithms & Data Structures, and my projects range from utility
+            tools and landing page redesigns to Checkam — a full-stack personal
+            finance tracker built for Nigerian users. I'm available for
+            freelance work and actively growing toward a full-time software
+            development role.
           </p>
           <div class="about-img" data-animation="slideRight">
             <img
@@ -299,10 +322,10 @@
         <div class="skills-container" data-animation="fadeIn">
           <div class="skills-content" data-animation="fadeIn">
             <p>
-             I build responsive, full-stack web applications using HTML, CSS,
-        JavaScript, Django, and Git — comfortable on both sides of the stack,
-        from designing interfaces that work on any screen to building backends
-        that handle real users and real data.
+              I build responsive, full-stack web applications using HTML, CSS,
+              JavaScript, Django, and Git — comfortable on both sides of the
+              stack, from designing interfaces that work on any screen to
+              building backends that handle real users and real data.
             </p>
           </div>
 
@@ -353,7 +376,7 @@
 
             <div class="skill-item">
               <div class="skill-name">
-              <i class="fab fa-python"></i>                
+                <i class="fab fa-python"></i>
                 <span>Django</span>
                 <span class="skill-percentage">60%</span>
               </div>
@@ -395,9 +418,11 @@
                         <div class="project-description">
                           <h3>DevBee Checkam</h3>
                           <p class="project-description-text">
-                            A personal finance tracker built for Nigerian users. 
-                            Log income and expenses, set category budgets, visualise your spending with charts, 
-                            and export your transaction history — all backed by a secure multi-user Django backend.
+                            A personal finance tracker built for Nigerian users.
+                            Log income and expenses, set category budgets,
+                            visualise your spending with charts, and export your
+                            transaction history — all backed by a secure
+                            multi-user Django backend.
                           </p>
                         </div>
                       </div>
@@ -405,7 +430,7 @@
                   </div>
                 </div>
               </div>
-               <div class="swiper-slide">
+              <div class="swiper-slide">
                 <div class="portfolio-item" data-animation="fadeIn">
                   <div class="portfolio-img-container">
                     <a
@@ -430,7 +455,7 @@
                     </a>
                   </div>
                 </div>
-               </div>
+              </div>
               <div class="swiper-slide">
                 <div class="portfolio-item" data-animation="fadeIn">
                   <div class="portfolio-img-container">
@@ -533,7 +558,7 @@
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
@@ -707,10 +732,15 @@
               <a href="#" class="social-icon"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a href="https://www.linkedin.com/in/ganiyu-ibrahim-99a439bb" class="social-icon" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/ganiyu-ibrahim-99a439bb"
+                class="social-icon"
+                target="_blank"
                 ><i class="fab fa-linkedin"></i
               ></a>
-              <a href="https://github.com/DevBeeLab" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/DevBeeLab" class="social-icon"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
           </div>
 
@@ -774,5 +804,36 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ganiyu Ibrahim Olawale",
+        "alternateName": "DevBee",
+        "url": "https://devbeelab.vercel.app",
+        "email": "[EMAIL_ADDRESS]",
+        "telephone": "+2348104202956",
+        "jobTitle": "Full-Stack Developer",
+        "description": "Full-Stack Developer specializing in responsive and interactive web experiences. Building with HTML, CSS, JavaScript, Django, and Git.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Oyo",
+          "addressCountry": "Nigeria"
+        },
+        "sameAs": [
+          "https://github.com/DevBeeLab",
+          "https://www.linkedin.com/in/ganiyu-ibrahim-99a439bb"
+        ],
+        "knowsAbout": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Django",
+          "Git",
+          "Responsive Web Design"
+        ]
+      }
+    </script>
   </body>
 </html>
